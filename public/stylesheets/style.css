@@ -2,14 +2,21 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: #fff;
-  vertical-align: middle;
   height: 100%;
+}
+
+.message {
+  vertical-align: middle;
   text-align: center;
 }
 
 h1 {
   font-size: 15em;
   font-family: ewert, sans-serif;
+}
+
+h3 {
+  font-size: 2em;
 }
 
 .yes {
