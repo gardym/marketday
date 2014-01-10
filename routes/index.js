@@ -4,6 +4,10 @@ function isItThursday() {
   return moment().day() === 4;
 }
 
+function isItFriday() {
+  return moment().day() === 5;
+}
+
 function isItAWeekDay() {
   var dayOfWeek = moment().day();
   return dayOfWeek > 0 && dayOfWeek < 6;
@@ -54,6 +58,7 @@ exports.index = function(req, res) {
 
   res.render('index', {
     title: 'Express',
+    isItSortOfMarketDay: isItFriday(),
     isItMarketDay: isItMarketDay(),
     message: message
   });

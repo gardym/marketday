@@ -5,10 +5,10 @@
   <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
   <script src="//use.edgefonts.net/ewert.js"></script>
 </head>
-<body class="<%= isItMarketDay ? 'yes' : 'no' %>">
+<body class="<%= isItMarketDay ? 'yes' : isItSortOfMarketDay ? 'maybe' : 'no' %>">
   <div class="message">
-    <h1><%= isItMarketDay ? "YES!" : "NO." %></h1>
-    <h3><%= message %></h3>
+    <h1><%= isItMarketDay ? "YES!" : isItSortOfMarketDay ? 'Sort-of' : "NO." %></h1>
+    <h3><%= isItSortOfMarketDay ? "Not in the true sense of the word, but kinda." : message %></h3>
   </div>
 </body>
 </html>
