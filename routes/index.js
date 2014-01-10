@@ -35,7 +35,10 @@ function getRandomEncouragement() {
 }
 
 var diss = [
-  "Sucks to be you"
+  "Sucks to be you",
+  "Does not computer.",
+  "Only in your mind.",
+  "You're dreaming. Of rainbow roti. Understandable."
 ];
 
 function getRandomDiss() {
